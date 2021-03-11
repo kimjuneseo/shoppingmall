@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <p>쇼핑몰 회원관리 ver 1.0</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./common.html">회원등록</a></li>
+                <li><a href="./inquiry.html">회원목록조회/수정</a></li>
+                <li><a href="#">회원매출조회</a></li>
+                <li><a href="#">홈으로.</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <p>홈쇼핑 회원 등록</p>
+        <form class="form">
+            <table border="1">
+                <tr>
+                    <th>회원번호(자동생성)</th>
+                    <td><input type="text" class="num"></td>
+                </tr>
+                <tr>
+                    <th>회원성명</th>
+                    <td><input type="text" class="name"></td>
+                </tr>
+                <tr>
+                    <th>회원전화</th>
+                    <td><input type="tel" class="tel"></td>
+                </tr>
+                <tr>
+                    <th>회원주소</th>
+                    <td><input type="text" class="address"></td>
+                </tr>
+                <tr>
+                    <th>가입일자</th>
+                    <td><input type="text" class="day"></td>
+                </tr>
+                <tr>
+                    <th>고객등급[A:VIP.B:일반,C:직원]</th>
+                    <td><input type="text" class="rat"></td>
+                </tr>
+                <tr>
+                    <th>도시코드</th>
+                    <td><input type="text" class="code"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="등록" class="submit">
+                        <button type="button" class="inquiry">조회</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    <script src="./js/common.js"></script>
+</body>
+</html>
