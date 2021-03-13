@@ -9,51 +9,46 @@ let code = document.querySelector(".code");
 let submit = document.querySelector(".submit");
 let inquiry = document.querySelector(".inquiry");
 
-window.onload = function(){
-    console.log(form.children[0]);
-}
-
-
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    if(num.value === ""){
+    if (num.value === "") {
         alert("회원번호가 입력되어 있지 않습니다");
 
         num.focus();
         return false;
     }
-    if(name.value === ""){
+    if (name.value === "") {
         alert("회원성명가 입력되어 있지 않습니다");
 
         name.focus();
         return false;
     }
-    if(tel.value === ""){
+    if (tel.value === "") {
         alert("회원전화가 입력되어 있지 않습니다");
 
         tel.focus();
         return false;
     }
-    if(address.value === ""){
+    if (address.value === "") {
         alert("회원주소가 입력되어 있지 않습니다");
 
         address.focus();
         return false;
     }
-    if(day.value === ""){
+    if (day.value === "") {
         alert("가입일자가 입력되어 있지 않습니다");
 
         day.focus();
         return false;
     }
-    if(rat.value === ""){
+    if (rat.value === "") {
         alert("고객등급가 입력되어 있지 않습니다");
 
         rat.focus();
         return false;
     }
-    if(code.value === ""){
+    if (code.value === "") {
         alert("도시코드가 입력되어 있지 않습니다");
 
         code.focus();
@@ -65,6 +60,6 @@ form.addEventListener("submit", function(e){
 
 });
 
-inquiry.addEventListener("click", function(){
+inquiry.addEventListener("click", function () {
     location.href = "inquiry.html";
 })
