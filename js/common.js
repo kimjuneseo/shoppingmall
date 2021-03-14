@@ -1,6 +1,6 @@
 let form = document.querySelector(".form");
 let num = document.querySelector(".num");
-let name = document.querySelector(".name");
+let userName = document.querySelector(".name");
 let tel = document.querySelector(".tel");
 let address = document.querySelector(".address");
 let day = document.querySelector(".day");
@@ -18,10 +18,10 @@ form.addEventListener("submit", function (e) {
         num.focus();
         return false;
     }
-    if (name.value === "") {
+    if (userName.value === "") {
         alert("회원성명가 입력되어 있지 않습니다");
 
-        name.focus();
+        userName.focus();
         return false;
     }
     if (tel.value === "") {
